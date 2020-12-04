@@ -1,0 +1,13 @@
+1.创建表 extends SQLiteOperhelper
+    1.先继承SQLiteOpenHelper创建类MySQLiteOpenHelper
+    2.创建表的字符串 注意：public static final
+    3.有参构造，不用改动
+    4.oncreate中建表 execSQL
+    5...不用写onUpgrade
+
+2.创建contentprovider SQLiteDatabase通过SQLiteOperhelper读取到表，然后对表进行操作
+    2.1写CRUD里面
+    2.2 manifest写contentprovider
+3.布局
+4.主方法
+    使用CRUD
